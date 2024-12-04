@@ -1,0 +1,60 @@
+.about-us-page {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(to bottom, rgb(47 108 183), rgb(4 50 63)), url(./../../assets/contactimg/aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    position: relative;
+  }
+  
+  .hero-section h1,
+  .hero-section p {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Team Section */
+  .team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+    .hero-section p {
+      font-size: 1rem;
+    }
+  }
+  

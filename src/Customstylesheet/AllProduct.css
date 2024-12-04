@@ -1,0 +1,153 @@
+/* Modern Color Scheme */
+
+
+/* Product Card */
+.product-card {
+  background-color: #f9f9f9; /* Soft light gray background */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 12px; /* Rounded corners for a soft appearance */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Title for product card */
+.card-title {
+  font-weight: bold;
+  font-size: 1.15rem; /* Slightly larger title for emphasis */
+  color: #333; /* Dark gray for the title */
+  margin-bottom: 0.5rem;
+}
+
+/* Card Subheading (e.g., ratings) */
+.card-subtitle {
+  font-size: 1rem;
+  color: #555; /* Subtle gray for text */
+  margin-bottom: 0.5rem;
+}
+
+/* Price Styling */
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 600; /* Bold price */
+  color: #ff6f61; /* Coral color for price to grab attention */
+}
+
+/* Button for adding to cart */
+.btn-add-to-cart {
+  background-color: #007bff; /* Modern blue for primary button */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px; /* Rounded button for modern look */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  text-transform: uppercase; /* Uppercase text for the button */
+  border: none;
+  font-size: 0.9rem;
+}
+
+/* Hover effect for button */
+.btn-add-to-cart:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 5px; /* Slight rounding for the dropdown */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: #ff6f61; /* Coral color for active state */
+  color: white;
+}
+
+/* Search Input */
+.form-control {
+  border-radius: 25px; /* Rounded corners for modern input */
+  border: 1px solid #ddd; /* Light border */
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for search input */
+.form-control:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Blue glow */
+}
+
+/* Container for the entire product section */
+.container {
+  max-width: 1200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+/* Product Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+   /* Spacing between the cards */
+  justify-content: space-between;
+}
+
+/* Each Product Card */
+.col-md-3 {
+  flex: 1 1 23%; /* Responsive design (4 cards per row on large screens) */
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Ensures padding and margins don't affect width */
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  background-color:#ddd;
+  text-align: center;
+  border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+}
+
+/* Card Image */
+.product-card img {
+  height: 250px; /* Consistent image height */
+  object-fit: cover;
+  width: 100%; /* Ensure image takes full width */
+  border-radius: 12px 12px 0 0; /* Rounded top corners */
+}
+
+/* No products found message */
+.no-products {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #777;
+  padding: 50px 0;
+}
+
+/* Header for the search and filter section */
+.mt-4 {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens (>= 768px), reduce the number of product cards in the row */
+  .col-md-3 {
+    flex: 1 1 48%; /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  /* On very small screens (< 480px), stack product cards vertically */
+  .col-md-3 {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}

@@ -1,0 +1,124 @@
+/* Navbar background and padding */
+.custom-navbar {
+  background: linear-gradient(120deg, #022f39, #015f74); 
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+}
+
+/* Custom Logo */
+.navbar-brand.logo {
+  font-size: 1.8rem;
+  color: #ffffff; /* White for the logo */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+/* Navbar items */
+.navbar-nav {
+  list-style: none; /* Remove bullets or numbers */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Ensure horizontal alignment */
+  align-items: center;
+  color:#fff
+}
+
+
+/* Navbar links */
+.custom-nav-link {
+  color: #ffffff; /* Default white color */
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+  color: rgba(255, 255, 255, 0.7); /* Dimmed white */
+  text-decoration: underline;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Cart icon styling */
+.nav-link.d-flex.align-items-center i {
+  font-size: 1.2rem;
+  color: #f2ac43; /* Accent color for the cart icon */
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link.d-flex.align-items-center:hover i {
+  transform: scale(1.1); /* Slight zoom effect */
+  color: rgba(255, 255, 255, 0.7); /* Dimmed white on hover */
+}
+
+/* Button styling */
+.custom-btn {
+  border: 2px solid rgba(255, 255, 255, 0.7); /* Slightly dimmed white border */
+  color: rgba(255, 255, 255, 0.9); /* Button text color close to white */
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* White background */
+  color: #015f74; /* Text matches navbar theme */
+}
+
+/* Responsive Navbar - Mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9); /* Darker background for mobile menu */
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.7); /* Matches hover white color */
+    border-radius: 3px;
+    width: 30px;
+    height: 4px;
+    display: block;
+    margin: 5px auto;
+  }
+}
+
+/* Desktop Navbar Styling */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-right: 1.5rem; /* Spacing between items */
+  }
+
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .nav-item:hover .custom-nav-link {
+    color: rgba(255, 255, 255, 0.7); /* Dimmed white */
+  }
+}
+
+/* Navbar link basic styles */
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #fff; /* Default color */
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  transition: color;
+}

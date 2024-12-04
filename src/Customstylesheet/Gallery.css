@@ -1,0 +1,62 @@
+/* Gallery Section Styles */
+.gallery-section {
+    background: linear-gradient(90deg, #f0f0f0, #e0f7fa); /* Modern light gradient background */
+    padding: 3rem 0;
+  }
+  
+  .gallery-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333; /* Elegant navy blue */
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .gallery-description {
+    font-size: 1.3rem;
+    color: #4f4f4f; /* Neutral dark gray */
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .gallery-item img {
+    border-radius: 12px; /* Match the container's rounded corners */
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .gallery-item:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Elevation effect for container */
+  }
+  
+  /* Add spacing between gallery items on smaller screens */
+  @media (max-width: 768px) {
+    .gallery-item img {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Responsive layout adjustments */
+  @media (max-width: 576px) {
+    .gallery-title {
+      font-size: 2.2rem;
+    }
+  
+    .gallery-description {
+      font-size: 1.1rem;
+    }
+  }
+  

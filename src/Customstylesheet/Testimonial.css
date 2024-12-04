@@ -1,0 +1,84 @@
+/* Testimonial Container */
+.testimonial-container {
+  background-color: lavender; /* Soft background color */
+  padding: 60px 20px; /* Slightly more padding for balance */
+  border-radius: 15px; /* Softer border radius for a more modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 1200px; /* Limiting max width for better content alignment */
+  margin: 0 auto; /* Center align the testimonial container */
+}
+
+/* Swiper Testimonial */
+.swiper-testimonial {
+  padding: 80px 0; /* Adjusted padding for balanced spacing */
+}
+
+/* Individual Testimonial Slide */
+.testimonial-slide .card {
+  background: white;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+  padding: 50px; /* More padding for the card content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding box-shadow transition */
+  position: relative;
+}
+
+/* Hover Effect for Card */
+.testimonial-slide .card:hover {
+  transform: translateY(-12px); /* Slightly stronger hover effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+/* Testimonial Heading */
+.testimonial-container h2 {
+  color: #333; /* Dark color for better readability */
+  font-size: 2.5rem; /* Larger font for the heading */
+  font-weight: bold; /* Bolder heading */
+  text-align: center; /* Center-aligned for balance */
+  margin-bottom: 30px; /* Space below the heading */
+  text-transform: uppercase; /* Uppercase for a modern, clean look */
+  letter-spacing: 2px; /* Slight spacing for better readability */
+}
+
+/* Testimonial Text */
+.testimonial-container p {
+  font-size: 1rem; /* Clear font size */
+  line-height: 1.7; /* Improved line spacing for better readability */
+  text-align: center; /* Centered text for uniformity */
+  color: #555; /* Slightly lighter text color for the content */
+  margin-bottom: 20px; /* Space below the paragraph */
+  max-width: 800px; /* Restrict the width for better alignment */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Pagination Bullet Styling */
+.swiper-pagination-bullet {
+  background-color: #6c63ff !important; /* Accent color for pagination bullets */
+  width: 12px; /* Smaller bullet size */
+  height: 12px; /* Smaller bullet size */
+  opacity: 1; /* Full opacity for clarity */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.swiper-pagination-bullet:hover {
+  transform: scale(1.2); /* Slight scale-up effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 40px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .testimonial-container h2 {
+    font-size: 2rem; /* Slightly smaller heading on mobile */
+  }
+
+  .testimonial-container p {
+    font-size: 0.9rem; /* Smaller text size on mobile */
+  }
+
+  .swiper-testimonial {
+    padding: 60px 0; /* Adjust padding for mobile */
+  }
+}
