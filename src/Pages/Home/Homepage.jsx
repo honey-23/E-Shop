@@ -5,7 +5,7 @@ import ServicesSection from '../../Components/Service/ServicesSection';
 import GallerySection from '../../Components/GallerySection/GallerySection';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 
-const Home = () => {
+const Homepage = () => {
   return (
     <Layout>
      <Herosection />
@@ -16,4 +16,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Homepage;

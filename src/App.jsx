@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
 import AllProduct from './Components/AllProduct/AllProduct';
 import Login from './Components/Login/Login';
 import Cart from './Pages/Cart/Cart';
@@ -9,6 +8,7 @@ import { Toaster } from 'react-hot-toast';
 import About from './Components/About/About';
 import ContactUs from './Components/ContactUs/ContactUs';
 import { CartProvider } from './Components/Context/CartContext';
+import Homepage from './Pages/Home/Homepage';
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -34,7 +34,7 @@ const App = () => {
         }}
       >
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/products" element={<AllProduct addToCart={addToCart} />} />
           <Route path="/cart" element={<Cart cart={cart} />} />
           <Route path="/about" element={<About />} />
