@@ -1,6 +1,6 @@
 .hero-section {
-  min-height: 1000px; /* Increased height from 100vh to 120vh */
-  background: linear-gradient(to right, #4a90e2, #50c9c3);
+  min-height: 600px; /* Increased height from 100vh to 120vh */
+  background: linear-gradient(to right, #4a90e2, #014554);
   position: relative;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .hero-buttons .hero-btn {
-  background-color: #ff6f61;
+  background-color: #e89b25;
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -27,12 +27,12 @@
 }
 
 .hero-buttons .hero-btn:hover {
-  background-color: #ff9478;
+  background-color: #001a20;
   transform: scale(1.1);
 }
 
 .hero-buttons .hero-btn-secondary {
-  background-color: #50c9c3;
+  background-color: #2d716e;
   border: none;
   color: #fff;
   padding: 10px 20px;

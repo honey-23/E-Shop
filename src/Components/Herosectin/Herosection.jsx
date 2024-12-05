@@ -14,7 +14,7 @@ const Herosection = () => {
               Discover the latest fashion trends, exclusive deals, and more at unbeatable prices.
             </p>
             <div className="hero-buttons">
-              <a href="/shop" className="btn hero-btn me-2">Start Shopping</a>
+              <a href="/products" className="btn hero-btn me-2">Start Shopping</a>
               {/* <a href="/offers" className="btn hero-btn-secondary">Explore Offers</a> */}
             </div>
           </div>

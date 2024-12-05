@@ -34,7 +34,7 @@ const Footer = () => {
             <h5 className="footer-title">Contact Us</h5>
             <p><i className="bi bi-geo-alt"></i> 123 E-Shop Street, New York, USA</p>
             <p><i className="bi bi-envelope"></i> contact@eshop.com</p>
-            <p><i className="bi bi-telephone"></i> +1 234 567 890</p>
+            <p><i className="bi bi-telephone"></i> +92-3084293206</p>
           </div>
         </div>
 
