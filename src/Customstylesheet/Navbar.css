@@ -1,135 +1,116 @@
-/* Navbar background and padding */
+/* General Navbar Styling */
 .custom-navbar {
-  background: linear-gradient(135deg, #003b46, #00838f); /* Smoother gradient */
+  background: linear-gradient(to right, #000000, #333333); /* Dark gradient */
   color: #ffffff;
-  padding: 1rem 2rem; /* Reduced padding for a sleeker look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
 }
 
-/* Custom Logo */
+/* Logo Styling */
 .navbar-brand.logo {
-  font-size: 2rem; /* Slightly larger logo */
-  color: #ffffff; /* White for the logo */
-  font-family: 'Poppins', sans-serif; /* Modern font for a fresh look */
-  font-weight: 700;
+  font-size: 2rem; /* Adjusted size for mobile */
+  color: #ffffff; /* White for consistency */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(255, 0, 0, 0.5); /* Logo shadow effect */
   text-decoration: none;
-  text-transform: uppercase; /* Professional touch */
-  letter-spacing: 1px; /* Spacing for readability */
+}
+.navbar-brand.logo:hover {
+  color: #ff4d4d;
 }
 
-/* Navbar items */
+/* Navbar Links */
 .navbar-nav {
-  list-style: none; /* Remove bullets or numbers */
-  padding: 0;
-  margin: 0;
-  display: flex; /* Ensure horizontal alignment */
+  display: flex;
   align-items: center;
-  gap: 1.5rem; /* Equal spacing between nav items */
+  gap: 1.5rem; /* Adjusted gap for smaller screens */
+  list-style: none;
+  margin: 0 auto;
 }
 
-/* Navbar links */
 .custom-nav-link {
   color: #ffffff;
-  font-size: 1.2rem; /* More prominent text size */
+  font-size: 1.1rem; /* Slightly smaller text for mobile */
   text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #ff4d4d;
+  transform: scale(1.1);
+  text-decoration: none; /* Consistent hover styling */
+}
+
+/* Cart Icon */
+.nav-link.d-flex.align-items-center i {
+  font-size: 1.3rem; /* Adjusted icon size for mobile */
+  color: #ffd700; /* Golden hue */
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.custom-nav-link:hover,
-.custom-nav-link:focus {
-  color: #80d8ff; /* Soft blue hover effect */
-  text-decoration: underline;
-  transform: translateY(-3px); /* Slightly elevated hover effect */
-}
-
-/* Cart icon styling */
-.nav-link.d-flex.align-items-center i {
-  font-size: 1.4rem; /* Larger icon for better visibility */
-  color: #ffd700; /* Gold for the cart icon */
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
 .nav-link.d-flex.align-items-center:hover i {
-  transform: scale(1.2); /* Increased zoom effect */
-  color: #80d8ff; /* Match hover color with links */
+  transform: scale(1.3);
+  color: #ff4d4d;
 }
 
-/* Button styling */
+/* Buttons */
 .custom-btn {
-  border: 2px solid #80d8ff; /* Blue accent border */
+  border: 2px solid #ff4d4d;
   color: #ffffff;
   font-weight: bold;
-  padding: 0.6rem 1.5rem; /* Balanced padding */
-  border-radius: 25px; /* Rounded button for a modern look */
+  padding: 0.6rem 1.2rem; /* Reduced padding for smaller buttons */
+  border-radius: 25px; /* Slightly smaller for mobile */
   background: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
 }
 
 .custom-btn:hover {
-  background-color: #80d8ff; /* Soft blue background */
-  color: #003b46; /* Text matches navbar theme */
+  background-color: #ff4d4d;
+  color: #ffffff;
 }
 
-/* Responsive Navbar - Mobile */
+/* Mobile Menu Styling */
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #003b46; /* Darker shade for the mobile menu */
-    padding: 1.2rem;
-    border-radius: 10px;
+    background: #000000; /* Consistent mobile menu background */
+    padding: 1.5rem;
+    border-radius: 15px;
   }
 
   .navbar-toggler {
     border: none;
+    background-color: transparent; /* Clear background for button */
+    padding: 0.5rem;
   }
 
   .navbar-toggler-icon {
-    background-color: #006772; /* Simple white toggle */
-    border-radius: 3px;
-    width: 30px;
-    height: 4px;
-    display: block;
-    margin: 5px auto;
+    background-color: #2f2f2f;
+    border-radius: 2px;
+    width: 30px; /* Adjusted width */
+    height: 4px; /* Adjusted height */
+    margin: 4px auto; /* Adjusted spacing */
+  }
+
+  .navbar-brand.logo {
+    font-size: 1.8rem; /* Adjusted logo size for mobile */
   }
 }
 
-/* Desktop Navbar Styling */
+/* Desktop Navbar */
 @media (min-width: 992px) {
   .navbar-nav .nav-item {
-    margin-right: 1.5rem; /* Spacing between items */
+    margin-right: 2rem;
   }
 
   .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
-
-  .nav-item:hover .custom-nav-link {
-    color: #80d8ff; /* Soft blue hover effect */
-  }
-}
-
-/* Navbar link basic styles */
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff; /* Default color */
-  text-decoration: none;
-  background: transparent;
-  border: 0;
-  transition: color 0.3s ease;
-}
-
-a.nav-link {
-  color: #ffffff;
-  transition: color 0.3s ease;
 }
 
 a.nav-link:hover {
-  color: #80d8ff; /* Consistent hover color */
+  color: #ff4d4d;
 }

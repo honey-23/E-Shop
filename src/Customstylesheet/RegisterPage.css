@@ -1,6 +1,6 @@
 /* Register Page Styles */
 body {
-  background-color: #f8f9fa; /* Light gray background for the page */
+  background-color: #fff; /* Light gray background for the page */
 }
 
 /* Register Page Container */
@@ -18,7 +18,7 @@ body {
 .register-card {
   width: 100%;
   max-width: 400px;
-  background-color: #fff;
+  background-color: #dfdcdc;
   border-radius: 12px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   padding: 30px 40px;
@@ -33,7 +33,7 @@ body {
 
 /* Register Card Title */
 .register-card h2 {
-  color: #0d3b66; /* Match login card heading color */
+  color: black; /* Match login card heading color */
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -45,7 +45,7 @@ body {
 .register-card .form-label {
   font-weight: 600;
   font-size: 0.9rem;
-  color: #0d3b66; /* Match login label color */
+  color: black;  /* Match login label color */
   margin-bottom: 8px;
 }
 
@@ -66,7 +66,7 @@ body {
 
 /* Primary Button Styles */
 .register-card .btn-primary {
-  background-color: #0d3b66; /* Match login button background color */
+  background-color: black; /* Match login button background color */
   border: none;
   font-weight: 700;
   text-transform: uppercase;
@@ -79,7 +79,7 @@ body {
 
 /* Hover effect for Button */
 .register-card .btn-primary:hover {
-  background-color: #1e88e5; /* Match login button hover color */
+  background-color:#ff4d4d;  /* Match login button hover color */
   transform: scale(1.05);
 }
 

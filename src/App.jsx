@@ -11,20 +11,6 @@ import { CartProvider } from './Components/Context/CartContext';
 import Homepage from './Pages/Home/Homepage';
 
 const App = () => {
-  const [cart, setCart] = useState([]);
-
-  // Correct function to add to cart
-  const addToCart = (item) => {
-    // Check if the item is already in the cart
-    const productExists = cart.some(cartItem => cartItem.id === item.id);
-    if (!productExists) {
-      // Add product to the cart if not already added
-      setCart([...cart, item]);
-    } else {
-      console.log('Product is already in the cart');
-    }
-  };
-
   return (
     <CartProvider>
       <BrowserRouter
@@ -35,8 +21,8 @@ const App = () => {
       >
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/products" element={<AllProduct addToCart={addToCart} />} />
-          <Route path="/cart" element={<Cart cart={cart} />} />
+          <Route path="/products" element={<AllProduct  />} />
+          <Route path="/cart" element={<Cart  />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
@@ -45,6 +31,7 @@ const App = () => {
         <Toaster />
       </BrowserRouter>
     </CartProvider>
+    
   );
 };
 

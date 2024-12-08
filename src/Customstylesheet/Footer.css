@@ -1,108 +1,131 @@
 /* General Footer Styles */
 .footer {
-  background: linear-gradient(120deg, #3a7bd5, #022f39);
-  color: #fff;
-    padding: 4rem 2rem;
-  }
-  
+  background: linear-gradient(to right, #000000, #333333); /* Dark gradient for a modern look */
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center; /* Center content for symmetry */
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(255, 0, 0, 0.5); /* Highlighted shadow for prominence */
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #e0e0e0; /* Softer text color */
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; /* Highlighted red hover effect */
+  transform: scale(1.1); /* Smooth scaling on hover */
+}
+
+/* Social Media Icons */
+.footer-social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff4d4d;
+  transform: scale(1.2);
+}
+
+/* Newsletter Section */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Space between input and button */
+  margin-top: 2rem;
+}
+
+.newsletter-input {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  width: 280px;
+  border: 1px solid #ff4d4d;
+  border-radius: 30px 0 0 30px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #ff4d4d;
+}
+
+.newsletter-form button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #ffffff;
+  color: #ff4d4d;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
   .footer-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
   }
-  
-  .footer p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .footer-links {
-    padding-left: 0;
-  }
-  
+
   .footer-link {
-    font-size: 1.1rem;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 0.8rem;
-    transition: color 0.3s ease;
+    font-size: 1rem;
   }
-  
-  .footer-link:hover {
-    color: #99f2c8;
-  }
-  
-  /* Social Media Icons */
+
   .footer-social-icons {
-    margin-top: 1rem;
+    flex-direction: row; /* Inline icons for mobile */
   }
-  
-  .social-icon {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #99f2c8;
-    transform: scale(1.2);
-  }
-  
-  /* Newsletter Section */
-  .newsletter-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
+
   .newsletter-input {
-    padding: 0.8rem;
-    font-size: 1.1rem;
-    width: 250px;
-    border: none;
-    border-radius: 30px 0 0 30px;
+    width: 200px;
   }
-  
-  .newsletter-input:focus {
-    outline: none;
-    border-color: #99f2c8;
+
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button */
   }
-  
-  .newsletter-form button {
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    background-color: #99f2c8;
-    border: none;
-    border-radius: 0 30px 30px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .newsletter-form button:hover {
-    background-color: #1f4037;
-    color: #fff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 767px) {
-    .footer-title {
-      font-size: 1.5rem;
-    }
-  
-    .footer-link {
-      font-size: 1rem;
-    }
-  
-    .footer-social-icons {
-      text-align: center;
-    }
-  
-    .newsletter-input {
-      width: 200px;
-    }
-  }
-  
+}

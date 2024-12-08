@@ -17,8 +17,11 @@ const AboutUs = () => {
         <section
   className="hero-section"
   style={{
-    backgroundImage: `linear-gradient(to bottom, rgba(2, 206, 253, 1), rgba(0, 0, 0, 0.85)), url(${heroImage})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.10), rgba(51, 51, 51, 0.5)), url(${heroImage})`,
   }}
+  
+  
+  
 >
   <div className="overlay"></div>
   <div className="container text-center">
